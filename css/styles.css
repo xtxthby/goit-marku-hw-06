@@ -88,7 +88,8 @@ img {
     line-height: 1.14;
     letter-spacing: 0.02em;
     text-decoration: none;
-
+    
+    transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -146,6 +147,7 @@ img {
     letter-spacing: 0.02em;
     text-decoration: none;
 
+    transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -418,6 +420,7 @@ img {
     border-radius: 50%;
     color: var(--icona-client-color);
 
+    transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     
@@ -464,6 +467,7 @@ img {
     border: 1px solid var(--icona-client-color);
     border-radius: 4px;
 
+    transition-property: color, border;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -530,6 +534,7 @@ img {
     line-height: 1.71;
     text-decoration: none;
 
+    transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -547,6 +552,7 @@ img {
     color: var(--text-color);
     font-weight: 700;
     line-height: 1.15;
+    text-transform: uppercase;
 }
 .icon-footer {
     display: flex;
@@ -565,6 +571,7 @@ img {
     background-color: rgba(255, 255, 255, 0.1);
     color: var(--text-color);
 
+    transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -576,6 +583,32 @@ img {
 .centr-icon {
     fill: currentColor;
 }
+.telegram-list {
+    display: flex;
+
+}
+ .footer-button {
+    border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+        
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 10px 28px;
+    cursor: pointer;
+    
+    background: var(--accent-color);
+    color: var(--text-color);
+ }
+  .button-icon {
+    margin-left: 10px;
+  }
 
 /* Портфоліо */
 
@@ -610,7 +643,7 @@ img {
     padding: 6px 22px;
 
     color: var(--title-text-color);
-    background: var(--second-bg-color);
+    background-color: var(--second-bg-color);
 
     font-weight: 500;
     font-size: 16px;
@@ -618,7 +651,8 @@ img {
     text-align: center;
     letter-spacing: 0.03em;
     cursor: pointer;
-     
+    
+    transition-property: backgraund-color, color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -673,6 +707,8 @@ img {
     letter-spacing: 0.03em;
     color: var(--text-color);
     transform: translateY(0);
+
+    transition-property: transform;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
