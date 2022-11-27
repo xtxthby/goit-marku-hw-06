@@ -847,7 +847,6 @@ img {
 }
 
 .modal-label {
-    position: relative;
     font-size: 12px;
     line-height: 1.16;
     letter-spacing: 0.01em;
@@ -855,6 +854,7 @@ img {
 }
 
 .modal-blok {
+    position: relative;
     display: flex;
     flex-direction: column;
     margin-bottom: 10px;
@@ -863,8 +863,10 @@ img {
     width: 448px;
     height: 40px;
     margin-top: 4px;
+    padding-left: 32px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
+    transition: border;
 }
 .modal-input:focus,
 .modal-icon:focus {
@@ -877,6 +879,7 @@ img {
     bottom: 11px;
     left: 12px;
     color: var(--title-text-color);
+    transition: color;
 }
 
 .modal-textarea {
