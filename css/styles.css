@@ -8,7 +8,7 @@
     --second-bg-color: #F5F4FA;
     --hero-bg-color: #2F303A;
     --button-bg-color: #188CE8;
-    --meil-tel-color:  rgba(255, 255, 255, 0.6);
+    --mail-tel-color:  rgba(255, 255, 255, 0.6);
     --border-header-color: #ECECEC;
     --border-carta-color: #EEEEEE;
     --icona-client-color: #AFB1B8;
@@ -513,6 +513,7 @@ img {
 
 .addres-footer{
     margin-top: 20px;
+    width: 231px;
 }
 
 .footer-addres .list-footer + .list-footer {
@@ -528,7 +529,7 @@ img {
 }
 .info,
 .telefon {
-    color: var(--meil-tel-color);
+    color: var(--mail-tel-color);
 
     font-style: normal;
     line-height: 1.71;
@@ -583,14 +584,44 @@ img {
 .centr-icon {
     fill: currentColor;
 }
+.blok-form {
+    margin-left: 93px;
+    display: inline-block;
+    
+
+}
 .telegram-list {
     display: flex;
 
 }
+
+.mail-input {
+    width: 358px;
+    height: 50px;
+
+}
+
+.form-input {
+    width: 100%;
+    height: 100%;
+    padding: 15px 16px;
+
+    font-size: 16px;
+    line-height: 1.25;
+    color: var(--mail-tel-color);
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: var(--hero-bg-color);
+
+}
+
  .footer-button {
     border: none;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+    margin-left: 12px;
 
     font-weight: 700;
     font-size: 16px;
