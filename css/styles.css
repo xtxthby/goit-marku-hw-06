@@ -866,8 +866,10 @@ img {
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
 }
-.modal-input:focus + .modal-icon {
+.modal-input:focus,
+.modal-icon:focus {
     color: var(--button-bg-color);
+    border: var(--button-bg-color);
 }
 
 .modal-icon {
