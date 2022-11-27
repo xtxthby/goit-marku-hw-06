@@ -901,7 +901,7 @@ textarea {
 .conditions {
   line-height: 1.17;
   color: var(--accent-color);
-  text-decoration: 1px solid var(--accent-color);
+  text-decoration: solid;
 }
 
 .button-send {
