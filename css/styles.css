@@ -808,6 +808,7 @@ img {
 
     width: 528px;
     height: 581px;
+    padding: 40px;
 
     background-color: var(--primary-bg-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
@@ -834,3 +835,100 @@ img {
     cursor: pointer;
 }
 
+.modal-title {
+    margin-top: 0;
+    margin-bottom: 12px;
+
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    color: var(--title-text-color);
+}
+
+.modal-label {
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: var(--list-text-color);
+}
+
+.modal-blok {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.modal-input {
+    width: 448px;
+    height: 40px;
+    margin-top: 4px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+}
+.modal-textarea {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.modal-text {
+    width: 448px;
+    height: 138px;
+    margin-top: 4px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    
+
+}
+
+textarea {
+    resize: none;
+}
+
+.modal-topic,
+.modal-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-contract {
+    line-height: 1.17;
+    
+    color: var(--list-text-color);
+}
+
+.conditions {
+  line-height: 1.17;
+  color: var(--accent-color);
+  text-decoration: 1px solid var(--accent-color);
+}
+
+.button-send {
+    
+    margin-top: 30px;
+
+    border: none;
+    padding: 10px 52px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    cursor: pointer;
+
+    background-color: var(--accent-color);
+    color: var(--text-color);
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;    
+    align-items: center;
+    text-align: center; 
+
+    transition: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.button-send:hover,
+.button-send:focus {
+    background: var(--button-bg-color);
+}
