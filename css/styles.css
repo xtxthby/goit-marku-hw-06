@@ -851,6 +851,7 @@ img {
     line-height: 1.16;
     letter-spacing: 0.01em;
     color: var(--list-text-color);
+     
 }
 
 .modal-blok {
@@ -868,8 +869,9 @@ img {
     border-radius: 4px;
     transition: border;
 }
-.modal-label:focus-within  > .modal-input  {
+.modal-label:focus-within  > .modal-input {
     border-color: var(--button-bg-color);
+    color: var(--button-bg-color);
 }
 
 .modal-icon {
@@ -908,6 +910,7 @@ textarea {
 }
 
 .modal-contract {
+    align-items: center;
     line-height: 1.17;
     
     color: var(--list-text-color);
@@ -917,6 +920,10 @@ textarea {
   line-height: 1.17;
   color: var(--accent-color);
   text-decoration: solid;
+}
+
+.modal-checkbox {
+    border: 1px solid var(--title-text-color);
 }
 
 .button-send {
