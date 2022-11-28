@@ -606,10 +606,6 @@ img {
     height: 100%;
     padding: 15px 16px;
 
-    font-size: 16px;
-    line-height: 1.25;
-    color: var(--mail-tel-color);
-
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
@@ -617,7 +613,14 @@ img {
 
 }
 
+.form-input::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+    color: var(--mail-tel-color);
+}
+
  .footer-button {
+    width: 200px;
     border: none;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
@@ -631,11 +634,20 @@ img {
     display: flex;
     align-items: center;
     text-align: center;
-    padding: 10px 28px;
+    text-indent: 28px;
     cursor: pointer;
     
     background: var(--accent-color);
     color: var(--text-color);
+
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+ }
+
+ .footer-button:hover,
+ .footer-button:focus {
+    background-color: var(--button-bg-color);
  }
   .button-icon {
     margin-left: 10px;
@@ -833,6 +845,24 @@ img {
 
     background-color: var(--text-color);
     cursor: pointer;
+
+    transition: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-close {
+    color: var(--primary-text-color);
+
+    transition: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+.modal-close:hover,
+.modal-close:focus {
+    fill: var(--accent-color);
 }
 
 .modal-title {
@@ -864,7 +894,7 @@ img {
     width: 448px;
     height: 40px;
     margin-top: 4px;
-    padding-left: 32px;
+    padding-left: 42px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     transition: border;
@@ -893,17 +923,27 @@ img {
 
 .modal-text {
     width: 448px;
-    height: 138px;
+    height: 120px;
     margin-top: 4px;
+    padding: 12px 16px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     
-
 }
-
+/* Убрати розтягування */
 textarea {
     resize: none;
 }
+ 
+textarea::placeholder {
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    
+    color: rgba(117, 117, 117, 0.5);
+}
+
+
 
 .modal-topic,
 .modal-button {
@@ -916,8 +956,9 @@ textarea {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 30px;
 
-    line-height: 1.17;
+    line-height: 1.51;
     
     color: var(--list-text-color);
 }
@@ -936,7 +977,7 @@ textarea {
 
 .conditions {
   margin-left: 3px;
-  line-height: 1.17;
+  line-height: 1.51;
 
   text-decoration: underline var(--accent-color);
   color: var(--accent-color);
@@ -956,11 +997,11 @@ textarea {
 }
 
 .button-send {
-    
-    margin-top: 30px;
+    width: 200px;
+    height: 50px;
 
     border: none;
-    padding: 10px 52px;
+    /* padding: 10px 52px; */
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     cursor: pointer;
