@@ -869,9 +869,12 @@ img {
     border-radius: 4px;
     transition: border;
 }
-.modal-label:focus-within  > .modal-input {
+.modal-label:focus-within > .modal-input,
+.modal-label:focus-within > .modal-icon,
+.modal-label:focus-within > .modal-text {
     border-color: var(--button-bg-color);
-    color: var(--button-bg-color);
+    fill: var(--button-bg-color);
+    outline: none;
 }
 
 .modal-icon {
@@ -910,20 +913,46 @@ textarea {
 }
 
 .modal-contract {
+    display: flex;
     align-items: center;
+    justify-content: center;
+
     line-height: 1.17;
     
     color: var(--list-text-color);
 }
+.checkbox {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
 
 .conditions {
+  margin-left: 3px;
   line-height: 1.17;
+
+  text-decoration: underline var(--accent-color);
   color: var(--accent-color);
-  text-decoration: solid;
 }
 
 .modal-checkbox {
-    border: 1px solid var(--title-text-color);
+    margin-right: 8px;
+    border: 2px solid var(--title-text-color);
+    border-radius: 2px;
+}
+
+.checkbox:checked + .modal-checkbox {
+    background-color: var(--accent-color);
+    border: transparent;
+    background-size: contain;
+    background-origin: border-box;
 }
 
 .button-send {
@@ -952,5 +981,5 @@ textarea {
 }
 .button-send:hover,
 .button-send:focus {
-    background: var(--button-bg-color);
+    background-color: var(--button-bg-color);
 }
